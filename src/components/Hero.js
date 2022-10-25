@@ -3,9 +3,9 @@ import heroVideo from "../assets/video.mp4"
 
 const Hero = () => {
     return (
-        <div className="w-full py-10">
+        <div name="home" className="w-full h-screen">
             <video className="absolute object-cover h-full w-full -z-10" src={heroVideo} autoPlay loop muted/>
-            <div className="w-full flex flex-col justify-center items-center text-white px-4 text-center">
+            <div className="w-full flex flex-col justify-center items-center text-white px-4 py-10 text-center">
                 <h1 className="text-3xl uppercase p-2">Fleet Data Management</h1>
                 <p className="text-lg text-red-100 py-4 w-1/2">
                     Anqatech uses machine learning and modern API tools to optimize

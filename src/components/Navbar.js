@@ -1,36 +1,52 @@
-import React from 'react'
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
+import React, {useState} from 'react'
+import { Link } from 'react-scroll'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 
 const Navbar = () => {
-  const [toggled, isToggled] = useState(false)
+    const [nav, setNav] = useState(false)
+    const handleClick = () => setNav(!nav)
 
-  const handleClick = () => {
-      isToggled(current => !current);
-  }
+    const handleClose =()=> setNav(!nav)
 
   return (
-    <div className="w-full bg-black text-white flex justify-between items-center">
-      <div className="px-10">
-        <h1 className="w-full text-3xl font-bold text-[#00df9a] uppercase">Anqatech</h1>
-      </div>
-      <nav>
-        <ul className="hidden md:flex gap-8">
-          <li className="p-4"><Link to="/">Home</Link></li>
-          <li className="p-4"><Link to="/about">About</Link></li>
-        </ul>
-
-        <div onClick={handleClick} className="p-4 flex justify-center md:hidden">
-            {toggled ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
+    <div className='w-screen h-[80px] z-10 bg-orange-50 sticky top-0 drop-shadow-2xl'>
+      <div className='px-2 flex justify-between items-center w-full h-full'>
+        <div className='flex items-center'>
+          <h1 className='text-3xl font-bold mr-4 sm:text-4xl uppercase'>Anqatech</h1>
+          <ul className='hidden md:flex'>
+            <li className='cursor-pointer'><Link to="home" smooth={true} offset={-100} duration={500}>Home</Link></li>
+            <li className='cursor-pointer'><Link to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
+          </ul>
         </div>
+        <div className='hidden md:flex pr-4'>
+          <button className='border-none bg-transparent text-black mr-4'>
+            Sign In
+          </button>
+          <button className='px-8 py-3'>Sign Up</button>
+        </div>
+        <div className='md:hidden mr-4' onClick={handleClick}>
+            {!nav ? <AiOutlineMenu className='w-5' /> : <AiOutlineClose className='w-5' />}
+        </div>
+      </div>
 
-        <ul className={toggled ? "flex flex-col gap-8": "hidden"}>
-          <li className="p-4" onClick={handleClick}><Link to="/">Home</Link></li>
-          <li className="p-4" onClick={handleClick}><Link to="/about">About</Link></li>
-        </ul>
-      </nav>
+      <ul className={!nav ? 'hidden' : 'absolute bg-orange-50 w-full px-8'}>
+        <li className='border-b-2 border-zinc-300 w-full'>
+          <Link onClick={handleClose} to="home" smooth={true} offset={-100} duration={500}>
+            <a href="!#" className='cursor-pointer'>Home</a>
+          </Link>
+        </li>
+        <li className='border-b-2 border-zinc-300 w-full'>
+          <Link onClick={handleClose} to="about" smooth={true} offset={-200} duration={500}>
+            <a href="!#" className='cursor-pointer'>About</a>
+          </Link>
+        </li>
+
+        <div className='flex flex-col my-4'>
+          <button className='bg-transparent text-black px-8 py-3 mb-4'>Sign In</button>
+          <button className='px-8 py-3'>Sign Up</button>
+        </div>
+      </ul>
     </div>
   )
 }

@@ -1,17 +1,18 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import About from './pages/About'
-import Home from './pages/Home'
-import NotFound from './pages/NotFound'
+import React from "react"
+import About from "./components/About"
+import Footer from "./components/Footer"
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
 
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />}/>
-      <Route path="about" element={<About />}/>
-      <Route path="*" element={<NotFound />}/>
-    </Routes>
+    <div className="">
+      <Navbar />
+      <Hero />
+      <About />
+      <Footer />
+    </div>
   )
 }
 
