@@ -20,12 +20,6 @@ const Navbar = () => {
             <li className='cursor-pointer'><Link to="pricing" smooth={true} offset={-80} duration={500}>Pricing</Link></li>
           </ul>
         </div>
-        <div className='hidden md:flex pr-4'>
-          <button className='border-none bg-transparent text-black mr-4'>
-            Sign In
-          </button>
-          <button className='px-8 py-3'>Sign Up</button>
-        </div>
         <div className='md:hidden mr-4' onClick={handleClick}>
             {!nav ? <AiOutlineMenu className='w-5' /> : <AiOutlineClose className='w-5' />}
         </div>
@@ -48,10 +42,6 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <div className='flex flex-col my-4'>
-          <button className='bg-transparent text-black px-8 py-3 mb-4'>Sign In</button>
-          <button className='px-8 py-3'>Sign Up</button>
-        </div>
       </ul>
     </div>
   )
