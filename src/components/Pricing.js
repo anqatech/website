@@ -11,11 +11,10 @@ const Pricing = () => {
 
         <div className='text-center py-8 text-slate-300'>
           <h2 className='text-3xl uppercase'>Pricing</h2>
-          <h3 className='text-5xl font-bold text-white py-8'>The right price for your research.</h3>
-          <p className='text-3xl'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
-            laudantium odio ullam inventore aliquid ipsum quasi tenetur velit
-            voluptatum iste.
+          <h3 className='text-5xl font-bold text-white py-8'>The right price for your fleet management.</h3>
+          <p className='text-3xl px-10'>
+            Centralise data from all of your operations onto a single consolidated platform and get a 
+            clear view of performance
           </p>
         </div>
 
@@ -26,7 +25,7 @@ const Pricing = () => {
             <div>
               <p className='text-4xl font-bold py-2 flex'>$699<span className='text-xl text-slate-500 flex flex-col justify-end'>/mo</span></p>
             </div>
-            <p className='text-xl py-2 text-slate-500'>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p className='text-2xl py-2 text-[#5fcba9] text-center'>AI Fleet Manager</p>
             <div className='text-xl'>
                 <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Routing & Dispatch</p>
                 <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Driver Coaching</p>
@@ -37,7 +36,7 @@ const Pricing = () => {
                 <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-white'  />Utilization Report</p>
                 <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-white'  />Fuel Report</p>
                 <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-white'  />Safety Scorecards</p>
-                <button className='w-full py-4 my-4'>Get Started</button>
+                <button className='w-full py-4 my-4'>Book A Call</button>
             </div>
           </div>
           <div className='bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative w-3/4'>
@@ -45,7 +44,7 @@ const Pricing = () => {
             <div>
               <p className='text-4xl font-bold py-2 flex'>$999<span className='text-xl text-slate-500 flex flex-col justify-end'>/mo</span></p>
             </div>
-            <p className='text-xl py-2 text-slate-500'>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p className='text-2xl py-2 text-[#5fcba9] text-center'>In-house Fleet Manager</p>
             <div className='text-xl'>
                 <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Routing & Dispatch</p>
                 <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Driver Coaching</p>
@@ -56,7 +55,7 @@ const Pricing = () => {
                 <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Utilization Report</p>
                 <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Fuel Report</p>
                 <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Safety Scorecards</p>
-                <button className='w-full py-4 my-4'>Get Started</button>
+                <button className='w-full py-4 my-4'>Book A Call</button>
             </div>
           </div>
         </div>
