@@ -19,35 +19,43 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className='grid md:grid-cols-2'>
+        <div className='grid md:grid-cols-2 place-items-center'>
 
-          <div className='bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative'>
+          <div className='bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative w-3/4'>
             <span className='uppercase px-3 py-1 bg-indigo-200 text-indigo-900 rounded-2xl text-sm'>Standard</span>
             <div>
-              <p className='text-6xl font-bold py-4 flex'>$699<span className='text-xl text-slate-500 flex flex-col justify-end'>/mo</span></p>
+              <p className='text-4xl font-bold py-2 flex'>$699<span className='text-xl text-slate-500 flex flex-col justify-end'>/mo</span></p>
             </div>
-            <p className='text-2xl py-8 text-slate-500'>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-            <div className='text-2xl'>
-                <p className='flex py-4'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
-                <p className='flex py-4'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
-                <p className='flex py-4'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
-                <p className='flex py-4'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
-                <p className='flex py-4'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+            <p className='text-xl py-2 text-slate-500'>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <div className='text-xl'>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Routing & Dispatch</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Driver Coaching</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Equipment Tracking</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Preventative Maintenance</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Streamlined Administration</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Pre-built Report</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-white'  />Utilization Report</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-white'  />Fuel Report</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-white'  />Safety Scorecards</p>
                 <button className='w-full py-4 my-4'>Get Started</button>
             </div>
           </div>
-          <div className='bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative'>
+          <div className='bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative w-3/4'>
             <span className='uppercase px-3 py-1 bg-indigo-200 text-indigo-900 rounded-2xl text-sm'>Premium</span>
             <div>
-              <p className='text-6xl font-bold py-4 flex'>$999<span className='text-xl text-slate-500 flex flex-col justify-end'>/mo</span></p>
+              <p className='text-4xl font-bold py-2 flex'>$999<span className='text-xl text-slate-500 flex flex-col justify-end'>/mo</span></p>
             </div>
-            <p className='text-2xl py-8 text-slate-500'>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-            <div className='text-2xl'>
-                <p className='flex py-4'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
-                <p className='flex py-4'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
-                <p className='flex py-4'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
-                <p className='flex py-4'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
-                <p className='flex py-4'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Lorem, ipsum dolor.</p>
+            <p className='text-xl py-2 text-slate-500'>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <div className='text-xl'>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Routing & Dispatch</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Driver Coaching</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Equipment Tracking</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Preventative Maintenance</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Streamlined Administration</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Pre-built Report</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Utilization Report</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Fuel Report</p>
+                <p className='flex py-1'><AiOutlineCheck className='w-8 mr-5 text-green-600'  />Safety Scorecards</p>
                 <button className='w-full py-4 my-4'>Get Started</button>
             </div>
           </div>
