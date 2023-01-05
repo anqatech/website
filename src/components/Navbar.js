@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Link } from 'react-scroll'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import logo from "../assets/long_stretched_1.png"
 
 
 const Navbar = () => {
@@ -11,9 +12,9 @@ const Navbar = () => {
 
   return (
     <div className='w-screen h-[80px] z-10 bg-orange-50 sticky top-0 drop-shadow-2xl'>
-      <div className='px-2 flex justify-between items-center w-full h-full'>
+      <div className='flex justify-between items-center w-full h-full'>
         <div className='flex justify-between items-center w-full'>
-          <h1 className='text-3xl text-[#5fcba9] font-bold mr-4 sm:text-4xl uppercase'>Anqatech</h1>
+          <img src={logo} alt="logo" width={210} />
           <ul className='hidden md:flex'>
             <li className='cursor-pointer'><Link to="home" smooth={true} offset={-100} duration={500}>Home</Link></li>
             <li className='cursor-pointer'><Link to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
